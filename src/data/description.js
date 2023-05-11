@@ -100,7 +100,7 @@ export const Description = [
   },
   {
     localisation: "Asie",
-    img: "https://www.pexels.com/fr-fr/photo/taj-mahal-inde-1603650/",
+    img: "https://images.pexels.com/photos/7079775/pexels-photo-7079775.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     Descriptions: "Taj Mahal",
     temps: "3j",
     Niveau: "1/5",
