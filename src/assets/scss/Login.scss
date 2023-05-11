@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(158, 155, 155);
+  height: 100vh;
+  width: 100vw;
+
+  .SecondeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    width: 70%;
+    background-color: rgb(95, 95, 95);
+    height: calc(100vh - 150px);
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    box-shadow: -1px 1px 3px 3px black;
+    .FormContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50vw;
+      height: 50vh;
+
+      label {
+        font-size: 30px;
+        color: antiquewhite;
+        font-family: $Global-font;
+      }
+      .emailInput {
+        font-family: $Global-font;
+        text-align: center;
+        width: 30vw;
+        height: 6vh;
+        border-radius: 15px;
+        font-size: 15px;
+        background-color: rgb(228, 228, 228);
+      }
+      .passwordInput {
+        text-align: center;
+        width: 30vw;
+        height: 6vh;
+        border-radius: 15px;
+        background-color: rgb(228, 228, 228);
+      }
+      .submitInput {
+        font-family: $Global-font;
+        text-align: center;
+        width: 12vw;
+        height: 5vh;
+        border-radius: 10px;
+        background-color: rgb(57, 231, 147);
+      }
+    }
+    .BagPicture {
+      width: 15vw;
+      height: 20vh;
+    }
+    .paragraph {
+      color: antiquewhite;
+      font-family: $Global-font;
+      font-size: 30px;
+    }
+  }
+}
