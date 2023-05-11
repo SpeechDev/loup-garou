@@ -8,7 +8,6 @@ function FavoritePage() {
     const storedFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
     setFavorites(storedFavorites);
   }, []);
-  console.log(favorites);
 
   const handleRemoveFavorite = (description) => {
     const updatedFavorites = favorites.filter(
@@ -25,16 +24,12 @@ function FavoritePage() {
         <p>No favorites yet.</p>
       ) : (
         <ul>
-          {favorites.map((favorite) => (
-            <>
-              <Card description={favorite} />
-              <li key={favorite}>
-                <p>{favorite}</p>
-                <button onClick={() => handleRemoveFavorite(favorite)}>
-                  Remove
-                </button>
-              </li>
-            </>
+          {favorites.map((item) => (
+            <Card
+              key={item.id} 
+              description={item}
+              onRemoveFavorite={() => handleRemoveFavorite(item.descriptions)}
+            />
           ))}
         </ul>
       )}
