@@ -18,9 +18,16 @@ export default function Card(item) {
           className="card-info
 "
         >
-          <p>Durée {description.temps}</p>
-          <p>Niveau {description.niveau}</p>
-          <p>A patir de {description.prix}</p>
+          <p>
+            Durée :
+            <br /> {description.temps}
+          </p>
+          <p>
+            Niveau :
+            <br /> {description.niveau}
+          </p>
+          <p clasName="prix">A partir de {description.prix}</p>
+
         </div>
         <div
           className="card-dates
