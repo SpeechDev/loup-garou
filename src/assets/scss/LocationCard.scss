@@ -1,0 +1,29 @@
+.container-locationcard {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    
+
+    .container-info-location {
+        width: 60%;
+        padding: 8% 4%;
+
+        h2 {
+            padding: 4%;
+            color: #FFF;
+        }
+
+        img {
+            width: 60%;
+            padding: 0 4% 2% 4%;
+        }
+    }
+    
+    .container-userslist {
+        padding-top: 10%;
+        width: 30%;
+        p {
+            color: #FFF;
+        }
+    }
+}

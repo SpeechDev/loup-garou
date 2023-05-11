@@ -9,6 +9,7 @@ import NavBar from "./components/login/NavBar";
 import LocalisationPage from "./pages/LocalisationPage";
 import LocationCard from "./pages/LocationCard";
 import Login from "./pages/Login";
+import LocalisationsSearch from "./pages/LocalisationsSearch";
 
 const router = createBrowserRouter([
   {
@@ -20,12 +21,17 @@ const router = createBrowserRouter([
     element: <LocalisationPage />,
   },
   {
-    path: `/location`,
+    path: `/description/:id`,
     element: <LocationCard />,
   },
   {
+
     path: `/login`,
     element: <Login />,
+
+    path: `/localisations`,
+    element: <LocalisationsSearch />,
+
   },
 ]);
 

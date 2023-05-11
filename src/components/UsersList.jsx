@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from 'react'
-import { Descriptions } from "../../datas/Descriptions";
+import { Descriptions } from "../datas/Descriptions";
 
 const UsersList = () => {
     const [data, setData] = useState([]);
@@ -13,8 +13,7 @@ const UsersList = () => {
           .catch((error) => console.error(error));
       }, []);
 
-
-      const dataWithComment = data.results
+    const dataWithComment = data.results
       ? data.results
           .map((item, index) => ({
             ...item,
@@ -23,12 +22,18 @@ const UsersList = () => {
           }))
       : null;
 
-      console.log(dataWithComment)
-
-  return (
-    <div>
-    </div>
-  )
+    return (
+        <div className="container-usersList">
+            <h2>Commentaires de nos utilisateurs</h2>
+            {dataWithComment && dataWithComment.map((user) => (
+                <div key={user.id}>
+                    <img src={user.picture.large} alt="" />
+                    <h3>{user.name.first} {user.name.last}</h3>
+                    <p>{user.description}</p>
+                </div>
+            ))}
+        </div>
+    )
 }
 
 export default UsersList
