@@ -18,7 +18,7 @@ function FavoritePage() {
   };
 
   return (
-    <div>
+    <div className="card-container">
       <h1>My Favorites</h1>
       {favorites.length === 0 ? (
         <p>No favorites yet.</p>
