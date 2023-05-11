@@ -5,7 +5,7 @@ export default function Card(item) {
   const toggleFavorite = () => {
     setIsFavorited(!isFavorited);
   };
-  console.log(description);
+
   const handleLetsGo = () => {
     console.log("Let’s go !");
   };
