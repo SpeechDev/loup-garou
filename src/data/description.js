@@ -2,7 +2,7 @@ export const Description = [
   {
     localisation: "Amérique du nord",
     img: "https://images.pexels.com/photos/3773651/pexels-photo-3773651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    descriptions: "séjour plage Miami",
+    descriptions: "Séjour plage Miami",
     temps: "4j",
     niveau: "3/5",
     date1: "18 mai 2023",
