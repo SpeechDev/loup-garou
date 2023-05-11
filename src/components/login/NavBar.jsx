@@ -15,20 +15,20 @@ const NavBar = () => {
 
       <ul className="Nav_Links">
         <li>
-          <Link path="/" className="NavLink">
+          <a href="/" className="NavLink">
             Accueil
-          </Link>
+          </a>
         </li>
         <li>
-          <Link path="/" className="NavLink">
+          <a href="/" className="NavLink">
             Localisation
-          </Link>
+          </a>
         </li>
 
         <li>
-          <Link path="/" className="NavLink">
+          <a href="/" className="NavLink">
             AboutUs
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>
