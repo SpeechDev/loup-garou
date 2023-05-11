@@ -24,12 +24,14 @@ const UsersList = () => {
 
     return (
         <div className="container-usersList">
-            <h2>Commentaires de nos utilisateurs</h2>
+            <h2>Commentaires</h2>
             {dataWithComment && dataWithComment.map((user) => (
                 <div key={user.id}>
-                    <img src={user.picture.large} alt="" />
-                    <h3>{user.name.first} {user.name.last}</h3>
-                    <p>{user.description}</p>
+                    <div className="container-usersList-info">
+                        <img src={user.picture.large} alt="" />
+                        <h3>{user.name.first} {user.name.last}</h3>
+                        <p>{user.description}</p>
+                    </div>
                 </div>
             ))}
         </div>

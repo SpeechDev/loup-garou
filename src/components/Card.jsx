@@ -22,7 +22,6 @@ export default function Card(item) {
       }
     }
   };
-
   function handleLetsGo() {
     console.log("Let’s go !");
   }

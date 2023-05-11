@@ -1,7 +1,7 @@
 export const Description = [
   {
     id: 1,
-    localisation: "Amérique du nord",
+    localisation: "Amérique du Nord",
     img: "https://images.pexels.com/photos/3773651/pexels-photo-3773651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     descriptions: "Plage Miami",
     temps: "4j",
@@ -46,7 +46,7 @@ export const Description = [
   },
   {
     id: 20,
-    localisation: "Amérique du nord",
+    localisation: "Amérique du Nord",
     img: "https://images.pexels.com/photos/5316682/pexels-photo-5316682.jpeg?auto=compress&cs=tinysrgb&w=1600",
     descriptions: "Yellow stone",
     temps: "3j",
@@ -92,7 +92,7 @@ export const Description = [
   },
   {
     id: 6,
-    localisation: "Amérique du nord",
+    localisation: "Amérique du Nord",
     img: "https://images.pexels.com/photos/2224861/pexels-photo-2224861.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     descriptions: "New York",
     temps: "3j",
@@ -138,7 +138,7 @@ export const Description = [
   },
   {
     id: 9,
-    localisation: "Amérique du nord",
+    localisation: "Amérique du Nord",
     img: "https://images.pexels.com/photos/9002136/pexels-photo-9002136.jpeg?auto=compress&cs=tinysrgb&w=1600",
     descriptions: "Zone 51",
     temps: "1j",
@@ -243,7 +243,7 @@ export const Description = [
   },
   {
     id: 16,
-    localisation: "Amérique du sud",
+    localisation: "Amérique du Sud",
     img: "https://images.pexels.com/photos/1058314/pexels-photo-1058314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     descriptions: "Brasil",
     temps: "4j",
@@ -258,7 +258,7 @@ export const Description = [
   },
   {
     id: 17,
-    localisation: "Amérique du sud",
+    localisation: "Amérique du Sud",
     img: "https://images.pexels.com/photos/12282082/pexels-photo-12282082.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     descriptions: "Mexico",
     temps: "4j",
@@ -273,7 +273,7 @@ export const Description = [
   },
   {
     id: 18,
-    localisation: "Amérique du sud",
+    localisation: "Amérique du Sud",
     img: "https://images.pexels.com/photos/1845870/pexels-photo-1845870.jpeg?auto=compress&cs=tinysrgb&w=1600",
     descriptions: "Cuba",
     temps: "4j",
@@ -288,7 +288,7 @@ export const Description = [
   },
   {
     id: 19,
-    localisation: "Amérique du sud",
+    localisation: "Amérique du Sud",
     img: "https://images.pexels.com/photos/90597/pexels-photo-90597.jpeg?auto=compress&cs=tinysrgb&w=1600",
     descriptions: "Peru",
     temps: "3j",
