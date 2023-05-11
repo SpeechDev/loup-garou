@@ -40,7 +40,7 @@ export default function Card(item) {
             Niveau :
             <br /> {description.niveau}
           </p>
-          <p clasName="prix">A partir de {description.prix}</p>
+          <p className="prix">A partir de {description.prix}</p>
         </div>
         <div className="card-dates">
           <div className="card-date">
