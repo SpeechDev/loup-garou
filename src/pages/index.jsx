@@ -1,5 +1,9 @@
+import Localisation from "../components/Localisation"
+
 export const Homepage = () => {
     return (
-        <div> Salut </div>
+        <div className="container-home"> 
+            <Localisation />
+        </div>
     )
 }

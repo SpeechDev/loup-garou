@@ -8,13 +8,17 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { Homepage } from './pages'
+import LocalisationPage from './pages/LocalisationPage'
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Homepage />
-
+  },
+  {
+    path: `/location/:id`,
+    element: <LocalisationPage />
   },
 ]);
 
