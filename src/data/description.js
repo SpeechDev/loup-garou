@@ -52,7 +52,7 @@ export const Description = [
     date3: "23 juin 2023",
     prix: "420€",
     place1: "complet",
-    place2: "1 places",
+    place2: "1 place",
     place3: "complet",
   },
   {
