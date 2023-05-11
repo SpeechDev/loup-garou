@@ -1,9 +1,10 @@
-import Localisation from "../components/Localisation"
+import Card from "../components/Card";
 
 export const Homepage = () => {
-    return (
-        <div className="container-home"> 
-            <Localisation />
-        </div>
-    )
-}
+  return (
+    <div>
+      <Card />
+    </div>
+  );
+};
+
