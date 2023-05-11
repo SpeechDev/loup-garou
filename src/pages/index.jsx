@@ -1,5 +1,9 @@
+import Card from "../components/Card";
+
 export const Homepage = () => {
-    return (
-        <div> Salut </div>
-    )
-}
+  return (
+    <div>
+      <Card />
+    </div>
+  );
+};
