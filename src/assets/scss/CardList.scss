@@ -1,4 +1,16 @@
 .container-cardlist {
     width: 100vw;
     height: 100vh;
+
+    h2 {
+        padding-left: 4%;
+        color: #FFF;
+        width: 100%;
+    }
+
+    .container-cardlist-img {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4%;
+    }
 }
