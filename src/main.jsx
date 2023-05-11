@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Homepage } from "./pages";
 import NavBar from "./components/login/NavBar";
 import LocalisationPage from "./pages/LocalisationPage";
+import LocationCard from "./pages/LocationCard";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: `/location/:id`,
     element: <LocalisationPage />,
+  },
+  {
+    path: `/location`,
+    element: <LocationCard />,
   },
 ]);
 
