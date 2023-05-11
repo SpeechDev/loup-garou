@@ -8,19 +8,20 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { Homepage } from './pages'
+import NavBar from './components/login/NavBar'
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Homepage />
-
+    element: <Homepage />,
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
+    <NavBar/>
       <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>,
