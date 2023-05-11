@@ -1,37 +1,37 @@
 import React, { useState } from "react";
 
-export default function Card(props) {
+export default function Card(item) {
   const [isFavorited, setIsFavorited] = useState(false);
+  const description = item.description
 
   const toggleFavorite = () => {
     setIsFavorited(!isFavorited);
   };
-
+console.log(description)
   const handleLetsGo = () => {
-    // ajouter le code pour aller à la page de réservation ou de paiement
     console.log("Let's go !");
   };
 
   return (
     <div className="card">
-      <img src={props.image} alt={props.title} />
+      <img src={description.img} alt={description.descriptions} />
       <div className="card-details">
-        <h2>{props.title}</h2>
-        <p>Durée : 4jrs</p>
-        <p>Niveau requis : 3 / 5</p>
-        <p>Prix : 460 €</p>
+        <h2>{description.descriptions}</h2>
+        <p>{description.temps}</p>
+        <p>{description.niveau}</p>
+        <p>{description.prix}</p>
         <div className="card-dates">
           <div className="card-date">
-            <p> 18 mai.2023</p>
-            <p> 2 places</p>
+            <p>{description.date1}</p>
+            <p>{description.place1}</p>
           </div>
           <div className="card-date">
-            <p> 18 mai.2023</p>
-            <p> 2 places</p>
+            <p>{description.date2}</p>
+            <p>{description.place2}</p>
           </div>
           <div className="card-date">
-            <p> 18 mai.2023</p>
-            <p>2 places</p>
+            <p>{description.date3}</p>
+            <p>{description.place3}</p>
           </div>
         </div>
         <div className="card-buttons">
