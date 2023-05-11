@@ -1,0 +1,46 @@
+.container-locationcard {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    .container-info-location {
+        h2 {
+            padding: 4% 4% 2% 4%;
+            color: #FFF;
+            font-size: 3rem;
+        }
+
+        img {
+            width: 100%;
+            height: 500px;
+        }
+
+        .card-info {
+            color: #FFF;
+            padding: 0 4%;
+            display: flex;
+
+            p{
+                padding: 2%;
+            }
+        }
+
+        .card-dates{
+            width: 50%;
+            color: #FFF;
+            padding: 2% 4%;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                padding: 3% 0;
+                text-align: center;
+            }
+        }
+    }
+    
+    .container-userslist {
+        padding: 4% 4%;
+
+    }
+}
