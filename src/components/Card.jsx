@@ -1,9 +1,8 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
-export default function Card(item) {
+export default function Card({ description }) {
   const [isFavorited, setIsFavorited] = useState(false);
-
-  const description = item.description;
 
   const toggleFavorite = () => {
     setIsFavorited(!isFavorited);
@@ -22,9 +21,11 @@ export default function Card(item) {
       }
     }
   };
+
   function handleLetsGo() {
     console.log("Let’s go !");
   }
+
   return (
     <div className="card">
       <img src={description.img} alt={description.descriptions} />
@@ -56,7 +57,9 @@ export default function Card(item) {
           </div>
         </div>
         <div className="card-buttons">
-          <button onClick={handleLetsGo}>Let’s go !</button>
+          <Link to={`/description/${description.id}`}>
+            <button onClick={handleLetsGo}>Let’s go !</button>
+          </Link>
           <button
             type="button"
             className={`favoriteButton ${isFavorited ? "favorited" : ""}`}
@@ -69,3 +72,8 @@ export default function Card(item) {
     </div>
   );
 }
+
+
+
+
+
