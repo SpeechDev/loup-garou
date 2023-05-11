@@ -17,11 +17,9 @@ const LocalisationPage = () => {
           <img src={localisation.url} alt={localisation.localisation} />
         </div>
         <div className="container-card-list-theme">
-          {description.length > 0 && description.map((item, index) =>
-            <Link to={`/description/${item.id}`} key={index}>
-              <Card description={item}/>
-            </Link>
-          )}
+          {description.length > 0 && description.map((item, index) => (
+            <Card key={index} description={item}/>
+          ))}
         </div>
       </div>
     </div>
