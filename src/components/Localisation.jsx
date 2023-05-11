@@ -7,6 +7,7 @@ const Localisation = () => {
 
   return (
     <div className="container-localisation">
+        <h2>Quelle destination vous intéresse ?</h2>
         {localisations.map((localisation) => (
           <div key={localisation.id}>
             <Link to={`/location/${localisation.id}`}>

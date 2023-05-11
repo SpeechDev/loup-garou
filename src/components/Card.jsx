@@ -1,13 +1,18 @@
 import React, { useState } from "react";
+import { useParams } from 'react-router-dom';
+
 export default function Card(item) {
   const [isFavorited, setIsFavorited] = useState(false);
   const description = item.description;
+
   const toggleFavorite = () => {
     setIsFavorited(!isFavorited);
   };
 
+  const { id } = useParams();
+
   const handleLetsGo = () => {
-    console.log("Let’s go !");
+    console.log(`Let’s go to card ${id}!`);
   };
   return (
     <div className="card">
@@ -15,43 +20,31 @@ export default function Card(item) {
       <div className="card-details">
         <h2>{description.descriptions}</h2>
         <div
-          className="card-info
-"
-        >
+          className="card-info">
           <p>Durée {description.temps}</p>
           <p>Niveau {description.niveau}</p>
           <p>A patir de {description.prix}</p>
         </div>
         <div
-          className="card-dates
-"
-        >
+          className="card-dates">
           <div
-            className="card-date
-  "
-          >
+            className="card-date">
             <p>{description.date1}</p>
             <p>{description.place1}</p>
           </div>
           <div
-            className="card-date
-  "
-          >
+            className="card-date">
             <p>{description.date2}</p>
             <p>{description.place2}</p>
           </div>
           <div
-            className="card-date
-  "
-          >
+            className="card-date">
             <p>{description.date3}</p>
             <p>{description.place3}</p>
           </div>
         </div>
         <div
-          className="card-buttons
-"
-        >
+          className="card-buttons">
           <button onClick={handleLetsGo}>Let’s go !</button>
           <button
             type="button"
