@@ -5,7 +5,7 @@ export default function Card(item) {
   const toggleFavorite = () => {
     setIsFavorited(!isFavorited);
   };
-  console.log(description);
+
   const handleLetsGo = () => {
     console.log("Let’s go !");
   };
@@ -19,14 +19,15 @@ export default function Card(item) {
 "
         >
           <p>
-            Durée
+            Durée :
             <br /> {description.temps}
           </p>
           <p>
-            Niveau
+            Niveau :
             <br /> {description.niveau}
           </p>
           <p clasName="prix">A partir de {description.prix}</p>
+
         </div>
         <div
           className="card-dates
@@ -64,9 +65,7 @@ export default function Card(item) {
             className={`favoriteButton ${isFavorited ? "favorited" : ""}`}
             onClick={toggleFavorite}
           >
-            <span className="heartIcon">
-              {isFavorited ? ":cœur:" : ":coeur_blanc:"}
-            </span>
+            <span className="heartIcon">{isFavorited ? "❤️" : "🤍"}</span>
           </button>
         </div>
       </div>

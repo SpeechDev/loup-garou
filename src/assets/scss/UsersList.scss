@@ -1,0 +1,21 @@
+.container-usersList {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    h2 {
+        padding: 0;
+        color: #FFF;
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        color: #FFF; 
+    }
+
+    img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+    }
+}

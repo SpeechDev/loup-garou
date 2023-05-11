@@ -20,8 +20,8 @@ const NavBar = () => {
           </a>
         </li>
         <li>
-          <a href="/" className="NavLink">
-            Localisation
+          <a href="/localisations" className="NavLink">
+            Localisations
           </a>
         </li>
 
