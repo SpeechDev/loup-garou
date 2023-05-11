@@ -63,7 +63,7 @@ export const Description = [
     id: 4,
     localisation: "Europe",
     img: "https://images.pexels.com/photos/2574631/pexels-photo-2574631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    descriptions: "Venise",
+    descriptions: "Paris",
     temps: "3j",
     niveau: "2/5",
     date1: "19 mai 2023",
