@@ -54,6 +54,16 @@
         border-radius: 10px;
         background-color: rgb(57, 231, 147);
       }
+      .Sentence {
+        display: flex;
+        font-family: $Global-font;
+        margin-top: 1rem;
+        a {
+          font-family: $Global-font;
+          margin: 0 0.4rem 0 0.4rem;
+          color: rgb(45, 181, 116);
+        }
+      }
     }
     .BagPicture {
       width: 15vw;

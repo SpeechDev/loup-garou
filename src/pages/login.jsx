@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { User } from "../data/User";
+
 import Bag from "./../assets/Bag.png";
 
 const Login = () => {
@@ -14,7 +15,7 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     if (email === user[0].email && password === user[0].password) {
-      window.location = "/home";
+      window.location = "/";
       localStorage.setItem("token", token);
     } else if (password !== user[0].password && password !== "") {
       setPasswordError("Mot de passe inconnu");
@@ -56,6 +57,13 @@ const Login = () => {
           <div className="password error">{passwordError}</div>
           <br />
           <input type="submit" value="Se connecter" className="submitInput" />
+          <div className="SentenceDiv">
+            <p className="Sentence">
+              Pas de compte?
+              <a href="/">Inscrivez</a>
+              vous!
+            </p>
+          </div>
         </form>
         <img src={Bag} alt="bag" className="BagPicture" />
         <p className="paragraph">The world is yours!</p>

@@ -25,13 +25,12 @@ const router = createBrowserRouter([
     element: <LocationCard />,
   },
   {
-
     path: `/login`,
     element: <Login />,
-
+  },
+  {
     path: `/localisations`,
     element: <LocalisationsSearch />,
-
   },
 ]);
 

@@ -1,7 +1,11 @@
 import Logo from "./../../assets/boussole.png";
-import { Link } from "react-router-dom";
+import LoginLogo from "./../../assets/LoginLogo.png";
+import { User } from "./../../data/User";
+import LogoutLogo from "./../../assets/LogoutLogo.png";
 
 const NavBar = () => {
+  const user = User;
+  const token = localStorage.getItem("token");
   return (
     <nav className="navBar">
       <div>
@@ -9,7 +13,7 @@ const NavBar = () => {
           <div className="LogoDiv">
             <img className="logo" src={Logo} alt="logo" />
           </div>
-          <h4 className="title">Astro'Trek</h4>
+          <h4 className="title">Travel'Earth</h4>
         </div>
       </div>
 
@@ -27,8 +31,23 @@ const NavBar = () => {
 
         <li>
           <a href="/" className="NavLink">
-            AboutUs
+            À propos
           </a>
+        </li>
+        <li>
+          {token ? (
+            <a href="/profil">
+              <img
+                src={user[0].imgUrl}
+                alt="ProfilePicture"
+                className="LogoutLogo"
+              />
+            </a>
+          ) : (
+            <a href="/Login">
+              <img src={LoginLogo} alt="Login" className="LoginLogo" />
+            </a>
+          )}
         </li>
       </ul>
     </nav>
