@@ -1,16 +1,19 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import UsersList from '../components/UsersList';
-import { Description } from '../data/description';
+import React from "react";
+import { useParams } from "react-router-dom";
+import UsersList from "../components/UsersList";
+import { Description } from "../data/description";
 
 const LocationCard = () => {
   const { id } = useParams();
-  const description = Description.find(description => description.id === parseInt(id));
+  const description = Description.find(
+    (description) => description.id === parseInt(id)
+  );
 
   return (
-    <div className='container-locationcard'>
+    <div className="container-locationcard">
       {description && (
-        <div className='container-info-location'>
+        <div className="container-info-location">
+          <h2>{description.Descriptions}</h2>
           <img src={description.img} alt="" />
           <h2>{description.descriptions}</h2>
           <div
@@ -39,7 +42,7 @@ const LocationCard = () => {
         </div>
         </div>
       )}
-      <div className='container-userslist'>
+      <div className="container-userslist">
         <UsersList />
       </div>
     </div>

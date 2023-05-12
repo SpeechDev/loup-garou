@@ -10,6 +10,7 @@ import LocalisationPage from "./pages/LocalisationPage";
 import LocationCard from "./pages/LocationCard";
 import Login from "./pages/Login";
 import LocalisationsSearch from "./pages/LocalisationsSearch";
+import Profil from "./components/Profil";
 import FavoritePage from "./pages/FavoritePage";
 
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: `/localisations`,
     element: <LocalisationsSearch />,
+  },
+  {
+    path: `/profil`,
+    element: <Profil />,
   },
   {
     path: `/favorite`,
