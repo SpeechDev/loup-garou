@@ -24,6 +24,11 @@ const NavBar = () => {
             Localisations
           </a>
         </li>
+        <li>
+          <a href="/favorite" className="NavLink">
+            Favoris
+          </a>
+        </li>
 
         <li>
           <a href="/" className="NavLink">

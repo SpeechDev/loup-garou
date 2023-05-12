@@ -15,6 +15,31 @@ const LocationCard = () => {
         <div className="container-info-location">
           <h2>{description.Descriptions}</h2>
           <img src={description.img} alt="" />
+          <h2>{description.descriptions}</h2>
+          <div
+          className="card-info">
+          <p>Durée {description.temps}</p>
+          <p>Niveau {description.niveau}</p>
+          <p>A patir de {description.prix}</p>
+        </div>
+        <div
+          className="card-dates">
+          <div
+            className="card-date">
+            <p>{description.date1}</p>
+            <p>{description.place1}</p>
+          </div>
+          <div
+            className="card-date">
+            <p>{description.date2}</p>
+            <p>{description.place2}</p>
+          </div>
+          <div
+            className="card-date">
+            <p>{description.date3}</p>
+            <p>{description.place3}</p>
+          </div>
+        </div>
         </div>
       )}
       <div className="container-userslist">

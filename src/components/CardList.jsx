@@ -4,15 +4,20 @@ import Card from "../components/Card";
 
 const CardList = () => {
   const description = Description;
+  const handleCardClick = (item) => {
+    history.push(`/location/${item.id}`);
+  };
 
   return (
-    <div className="container-cardlist">
-      <h2>Les incontournables</h2>
-      <div className="container-cardlist-img">
-        {description.map((item, index) => (
-          <Card key={index} description={item} />
-        ))}
-      </div>
+
+    <div className='container-cardlist'>
+        <h2>Les incontournables</h2>
+        <div className='container-cardlist-img'>
+            {description.map((item, index) => (
+                <Card key={index} description={item} onClick={() => handleCardClick(item)} />
+            ))}
+        </div>
+
     </div>
   );
 };

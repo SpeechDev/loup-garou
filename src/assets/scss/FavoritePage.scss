@@ -1,0 +1,18 @@
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4% 8%;
+    h1 {
+      width: 100%;
+      text-align: start;
+      margin: 60px 0;
+      color: #fff;
+    }
+    ul {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
