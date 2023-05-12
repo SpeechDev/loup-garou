@@ -29,7 +29,11 @@ const NavBar = () => {
             Favoris
           </a>
         </li>
-
+        <li>
+          <a href="/profil" className="NavLink">
+            Profil
+          </a>
+        </li>
         <li>
           <a href="/" className="NavLink">
             AboutUs

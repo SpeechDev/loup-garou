@@ -8,8 +8,9 @@ const CardList = () => {
     history.push(`/location/${item.id}`);
   };
 
-  return (
+  console.log("banana")
 
+  return (
     <div className='container-cardlist'>
         <h2>Les incontournables</h2>
         <div className='container-cardlist-img'>

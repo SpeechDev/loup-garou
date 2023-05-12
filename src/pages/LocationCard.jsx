@@ -2,8 +2,6 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import UsersList from '../components/UsersList';
 import { Description } from '../data/description';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
 
 const LocationCard = () => {
   const { id } = useParams();
