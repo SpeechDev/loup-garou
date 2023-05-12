@@ -170,7 +170,7 @@ export const Description = [
     id: 11,
     localisation: "Asie",
     img: "https://images.pexels.com/photos/19872/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600",
-    descriptions: "grande muraille",
+    descriptions: "Grande muraille",
     temps: "3j",
     niveau: "2/5",
     date1: "20 mai 2023",
