@@ -26,10 +26,12 @@ const LocationCard = () => {
       slidesToSlide: 1 // optional, default to 1.
     }
   };
+
   return (
-    <div className='container-locationcard'>
+    <div className="container-locationcard">
       {description && (
-        <div className='container-info-location'>
+        <div className="container-info-location">
+          <h2>{description.Descriptions}</h2>
           <img src={description.img} alt="" />
           <h2>{description.descriptions}</h2>
           <div
@@ -57,9 +59,8 @@ const LocationCard = () => {
           </div>
         </div>
         </div>
-      )}
-      <div className='container-userslist'>
-        
+      )}        
+      <div className="container-userslist">
         <UsersList />
       </div>
     </div>
