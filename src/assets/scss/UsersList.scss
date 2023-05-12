@@ -1,0 +1,34 @@
+.container-usersList {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+  
+    h2 {
+        font-size: 2rem;
+        color: #FFF;
+        padding: 0 4% 3% 4%;
+    }
+  
+    .container-usersList-info {
+        display: flex;
+        align-items: center;
+        padding: 2%;
+
+        h3 {
+            color: #FFF; 
+            font-size: 1.5rem;
+            padding-left: 2%;
+          }        
+          img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+          }
+
+          p {
+            color: #FFF;
+            font-size: 1.5rem;
+            padding: 2% 2%;
+          }
+    }
+  }

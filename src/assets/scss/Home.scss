@@ -1,0 +1,18 @@
+.container-home {
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+
+    h2 {
+        padding: 12% 8% 0 8%;
+        font-size: 2rem;
+        color: #FFF;
+    }
+
+    .container-list-destination {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 0 8% 0 8%;
+    }
+}
